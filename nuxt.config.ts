@@ -3,13 +3,17 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
 	app: {
 		head: {
-			link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
+			link: [{ rel: "icon", type: "image/png", href: "/img/favicon.png" }],
 		},
 	},
+
 	compatibilityDate: "2024-11-01",
 	css: ["~/assets/css/main.css"],
 	devtools: { enabled: true },
+
 	vite: {
 		plugins: [tailwindcss()],
 	},
+
+	modules: ["@nuxt/image"],
 });

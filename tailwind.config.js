@@ -3,8 +3,12 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				primary: "black",
-				secondary: "white",
+				primary: {
+					"slate-300": "#D5E1EF",
+					"slate-500": "#68778D",
+					"slate-900": "#1F314F",
+				},
+				secondary: "black",
 			},
 			fontFamily: {
 				serif: ["serif"],
